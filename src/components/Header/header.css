@@ -1,0 +1,38 @@
+.logo img{
+    width: 7rem;
+}
+.right-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.header1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.size{
+    font-size: 2rem;
+    color: #31b675;
+}
+.header1 h5{
+    font-size: 0.7rem;
+    color: grey;
+}
+
+/* ########################################################## */
+
+@media  screen and (max-width:768px) {
+    header .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-header{
+        gap: 0.5rem;
+    }
+    .size{
+        font-size: 1rem;
+    }
+}

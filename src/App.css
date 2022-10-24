@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex_space{
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  max-width: 85%;
+  margin: auto;
 }
+button{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.primary-btn{
+  padding: 10px 20px;
+  background-color: #31b631;
+  color: #fff;
+  border: 1px solid transparent;
+  font-weight: 400;
+  transition: 0.9s;
+}
+.primary-btn:hover{
+  background-color: #fff;
+  border-color: rgb(181, 171, 171);
+  color: #31b631;
+}
+
+.top{
+  padding-top: 4rem;
+}
+.heading .line {
+  width: 18%;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom: 2px dashed #999999;
+  position: relative;
+}
+.heading .line::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #31b675;
+  border-radius: 50%;
+  top: -6px;
+  left: -20px;
+}
+.heading .line::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #31b675;
+  border-radius: 50%;
+  top: -6px;
+  right: -20px;
+}
+
+.full_container {
+  max-width: 95%;
+  margin: auto;
+}
+
+textarea,
+input{
+  width: 100%;
+  padding:20px;
+  outline: none;
+  border: none;
+}
+
+
+
+

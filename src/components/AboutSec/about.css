@@ -1,0 +1,113 @@
+.aboutCard{
+  padding-top: 4rem;
+}
+.aboutCard h4 {
+    color: #31b675;
+  }
+.aboutCard h1 {
+  font-size: 35px;
+  font-weight: 100;
+}
+.aboutCard span{
+    font-weight: 700;
+}
+
+.aboutCard p {
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.row1 {
+    padding-right: 30px;
+}
+.aboutCard .row.image,
+.aboutCard .image {
+  position: relative;
+}
+
+.thoda-sa{
+    font-size: 20px;
+    color: #fff;
+}
+
+.secondary-btn{
+    padding: 13px 25px;
+    background-color: #31b675;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.aboutCard .image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89.5%;
+    height: 44vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .control-btn .prev1{
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    left: 43%;
+    background-color: rgba(255, 255, 255,0.3);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.features .flex_space{
+    flex-direction: row-reverse;
+}
+
+.features img{
+    width: 40vw;
+}
+.features{
+    padding-top: 4rem;
+}
+.features .row1 {
+    padding-left: 30px;
+  }
+.features .control-btn,.image::after {
+  display: none;
+}
+.features h1 {
+  font-weight: bold;
+}
+.features h1 span {
+  color: #31b675;
+}
+
+
+@media screen and (max-width: 768px) {
+    .features .flex_space,
+    .aboutCard {
+      flex-direction: column;
+    }
+    .aboutCard .image::after{
+      display: none;
+    }
+    .aboutCard .row {
+      width: 100%;
+    }
+    .aboutCard .image {
+      margin-top: 50px;
+    }
+    .aboutCard img {
+      width: 100%;
+    }
+  }
+  
+
+ 
