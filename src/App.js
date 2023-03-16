@@ -10,6 +10,7 @@ import About from './components/AboutSec/About';
 import Gallary from './components/Gallery/Gallary';
 import Destina from './components/Destination/Destina';
 import SinglePages from './SinglePage/SinglePages';
+import Blog from './components/BlogSec/Blog';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/gallery" element={<Gallary />} />
           <Route path="/destination" element={<Destina />} />
           <Route path="/SinglePages/:id" element={<SinglePages />} />
+          <Route path="/Blog" element={<Blog/>} />
         </Routes>
       </Router>
     </>
